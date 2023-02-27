@@ -1,0 +1,17 @@
+import { useState, useEffect } from 'react';
+import "./styles.css";
+
+const ShowTurns = ({ turns }) => {
+  return(
+    <div>
+      <h1>{turns}</h1>
+      <p>Voltas</p>
+    </div>
+  );
+};
+
+const ShowTime = ({ time }) => {
+  const counter = time;
+  const min = Math.round(counter/60);
+  const séc = counter%60;
+  return(
